@@ -1,0 +1,20 @@
+server:
+  port: 1112
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://116.62.123.174:1111/eureka/
+
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/chengango/springc-tests/
+          search-paths: tree/master/configs
+          username: chenganggo@gmail.com
+          password: {cipher}xxx
+

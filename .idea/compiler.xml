@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="api-gateway" />
+        <module name="config-client" />
+        <module name="config-service" />
+        <module name="eureka-service" />
+        <module name="feign-service" />
+        <module name="hello-service" />
+        <module name="ribbon-service" />
+        <module name="springc-tests" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api-gateway" target="1.8" />
+      <module name="config-client" target="1.8" />
+      <module name="config-service" target="1.8" />
+      <module name="eureka-service" target="1.8" />
+      <module name="feign-service" target="1.8" />
+      <module name="hello-service" target="1.8" />
+      <module name="ribbon-service" target="1.8" />
+      <module name="springc-tests" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,19 @@
+server:
+  port: 1301
+
+spring:
+  application:
+    name: feign-service
+
+zuul:
+  routes:
+    feign-service:
+      path: /api-a/**
+    hello-service:
+      path: /api-b/**
+    addHostHeader: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://116.62.123.174:1111/eureka/

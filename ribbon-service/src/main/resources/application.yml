@@ -1,0 +1,17 @@
+server:
+  port: 1202
+
+eureka:
+  instance:
+    hostname: 116.62.123.174
+    instance-id: http://${eureka.instance.hostname}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://116.62.123.174:1111/eureka/
+    healthcheck:
+      enable: true
+
+spring:
+  application:
+    name: ribbon-service
+

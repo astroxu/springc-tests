@@ -1,0 +1,21 @@
+server:
+  port: 1210
+
+spring:
+  application:
+    #name: config-client
+    name: application
+  cloud:
+    config:
+      uri: https://localhost:1112
+      profile: dev
+      label: master
+      discovery:
+        enabled: true
+        service-id: config-service
+      fail-fast: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://116.62.123.174:1111/eureka/
