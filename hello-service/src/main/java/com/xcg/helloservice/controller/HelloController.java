@@ -19,7 +19,8 @@ public class HelloController {
     public String index() {
         ServiceInstance instance = discoveryClient.getLocalServiceInstance();
         LOG.info("hello,host:" + instance.getHost() + ",serviceId:" + instance.getServiceId());
-        return "Hello World!";
+        LOG.info("heheda");
+	return "Hello World!";
     }
 
 }
